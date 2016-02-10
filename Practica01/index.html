@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Practica01</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+
+</head>
+<body>
+<div align="center">
+	<h1>Practica 01  -  Electiva Profesional 1</h1>
+	<hr>
+	<div class="btn-group-vertical" >
+	<a data-toggle="modal" href="#Areas" class="btn btn-primary btn-large">Áreas</a>
+	<a data-toggle="modal" href="#Vocales" class="btn btn-primary btn-large">Contar Vocales</a>
+	<a data-toggle="modal" href="#Consonantes" class="btn btn-primary btn-large">Contar Consonantes</a>
+	<a data-toggle="modal" href="#numCapicua" class="btn btn-primary btn-large">Número Capicúa</a>
+</div>
+</div>
+
+<div class="modal fade" id="Areas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+	<div class="modal-dialog">
+		<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Áreas</h4>
+				 </div>
+			<div id="DatosModalAreas" class="modal-body">
+				<label>Para encontrar el Area del Circulo digité el radio:</label>
+				<input class="form-control" id="Radio" type="number" name="name" value="">
+				<button type="submit" class="btn btn-default" id="btnCalculaAcirculo" tabindex='10'>Calcular</button>
+				<br>
+				<label>Para encontrar el Area del Triangulo digité la Base y la Altura:</label>
+				<input class="form-control" id="Base" type="number" name="name" placeholder="Digité la Base del Triangulo" value="">
+				<input class="form-control" id="Altura" type="number" name="name" value="" placeholder="Digité la Altura del Triangulo">
+				<button type="submit" class="btn btn-default" id="btnCalculaAtriangulo" tabindex='10'>Calcular</button>
+				<br>
+				<label>Para encontrar el Area del Cuadrado digité la langitud de uno de sus lados:</label>
+				<input class="form-control" id="lado" type="number" name="name" value="">
+				<button type="submit" class="btn btn-default" id="btnCalculaAcuadrado" tabindex='10'>Calcular</button>
+
+		</div>
+	</div>
+</div>
+</div>
+
+
+<!--Cuenta Vocales-->
+	<div class="modal fade" id="Vocales" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+	 	<div class="modal-dialog">
+	    <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	            <h4 class="modal-title">Cuenta Vocales</h4>
+	         </div>
+				<div id="DatosModal" class="modal-body">
+					<label>Por favor digité una palabra</label>
+					<input class="form-control" id="PalabraV" type="text" name="name" value="">
+					<button type="submit" class="btn btn-default" id="btnContarVocales" tabindex='10'>Contar</button>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!--Cuenta Consonantes-->
+<div class="modal fade" id="Consonantes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+	<div class="modal-dialog">
+		<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Cuenta Consonantes</h4>
+				 </div>
+			<div id="DatosModalConsonantes" class="modal-body">
+				<label>Por favor digité una palabra</label>
+				<input class="form-control" id="PalabraC" type="text" name="name" value="">
+				<button type="submit" class="btn btn-default" id="btnContarConsonantes" tabindex='10'>Contar</button>
+		</div>
+	</div>
+</div>
+</div>
+
+<!--Numero Capicua-->
+<div class="modal fade" id="numCapicua" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+	<div class="modal-dialog">
+		<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Número Capicúa</h4>
+				 </div>
+			<div id="DatosModalCapicua" class="modal-body">
+				<label>Por favor digité un número</label>
+				<input class="form-control" id="NumeroCapi" type="number" name="name" value="">
+				<button type="submit" class="btn btn-default" id="btnNumeroCapicua" tabindex='10'>Capicúa?</button>
+		</div>
+	</div>
+</div>
+</div>
+
+<hr>
+<div align="center">
+<h1> Ingeniería de Sistemas - Universidad de Cundinamarca </h1>
+</di>
+</body>
+</html>
